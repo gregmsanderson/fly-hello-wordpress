@@ -1,6 +1,6 @@
 # fly-hello-wordpress
 
-A simple example of running WordPress on [Fly.io](https://fly.io). It uses the official [WordPress Docker image](https://hub.docker.com/_/wordpress) which currently uses Apache & PHP 7.4.
+A simple example of running WordPress on [Fly.io](https://fly.io). It uses the official [WordPress Docker image](https://hub.docker.com/_/wordpress).
 
 ## Run it locally
 
