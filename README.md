@@ -47,7 +47,7 @@ The `WORDPRESS_DEBUG` can be used _if_ you experience any problems and want to s
 
 The `WORDPRESS_TABLE_PREFIX` is usually `wp_` but can be any string. That's useful if your database contains other tables.
 
-The `WORDPRESS_CONFIG_EXTRA` is used to add additional values to the config file. Here we are using that to specify SSL should be used to connect to a database. That is needed if you want to connect to a [PlanetScale](https://planetscale.com) database. See [this issue](https://github.com/docker-library/wordpress/issues/639) for why.
+The `WORDPRESS_CONFIG_EXTRA` is used to add additional values to the config file. Here we are using that to specify SSL should be used to connect to a database. That is needed if you want to connect to a [PlanetScale](https://planetscale.com) database.
 
 The `WORDPRESS_AUTH_KEY` (and onwards) are security keys/salts. If you change them, all users will be forced to login again. We recommend using their official generator: [https://api.wordpress.org/secret-key/1.1/salt](https://api.wordpress.org/secret-key/1.1/salt). As shown above, the variables it generates need to be prefixed with `WORDPRESS_` for the image to recognise them.
 
