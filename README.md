@@ -116,7 +116,7 @@ Once complete type `fly open` to visit `https://your-app-name.fly.dev`. After a 
 
 ## MySQL database
 
-This guide assumes you already have a MySQL database and so does not cover creating one. You may want to [create a Fly app for a MySQL database](https://fly.io/docs/app-guides/mysql-on-fly/). Or use an external service such as Planetscale.
+This guide assumes you already have a MySQL database and so does not cover creating one. You may want to [create a Fly app for a MySQL database](https://fly.io/docs/app-guides/mysql-on-fly/). Or use an external service such as Planetscale (this repo was tested with a Planetscale database).
 
 ## Custom theme/plugins?
 
