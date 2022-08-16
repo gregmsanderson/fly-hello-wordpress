@@ -1,0 +1,26 @@
+app = "fly-hello-wordpress"
+
+[env]
+WORDPRESS_CONFIG_EXTRA = "define(\"MYSQL_CLIENT_FLAGS\", MYSQLI_CLIENT_SSL);"
+
+[[services]]
+# note: the default WordPress image listens on port 80, rather than the more common 8080:
+internal_port = 80
+protocol = "tcp"
+
+[services.concurrency]
+hard_limit = 50
+soft_limit = 25
+
+[[services.ports]]
+handlers = ["tls", "http"]
+port = 443
+
+[[services.ports]]
+handlers = ["http"]
+port = 80
+
+[[services.tcp_checks]]
+grace_period = "1s"
+interval = 5000
+timeout = 2000

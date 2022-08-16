@@ -1,0 +1,10 @@
+# 1. First ignore everything
+**
+
+# 2. Then add back just the files/directories the image needs to include
+
+# 3. Bonus: ignore unnecessary files that may be inside those allowed directories
+**/*~
+**/*.log
+**/.DS_Store
+**/Thumbs.db

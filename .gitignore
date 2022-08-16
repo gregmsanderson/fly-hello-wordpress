@@ -11,7 +11,7 @@ wp-content/*
 # ignore these plugins
 wp-content/plugins/hello.php
 
-# ignore specific themes
+# ignore these themes
 wp-content/themes/twenty*/
 
 # ignore node dependency directories
@@ -21,3 +21,6 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+# Mac files
+.DS_Store
