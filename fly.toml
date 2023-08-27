@@ -19,6 +19,7 @@ port = 443
 [[services.ports]]
 handlers = ["http"]
 port = 80
+force_https = true
 
 [[services.tcp_checks]]
 grace_period = "1s"
